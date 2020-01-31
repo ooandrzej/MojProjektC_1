@@ -5,7 +5,7 @@
     },
     "editor.tokenColorCustomizations": {
         "[Default Dark+]": {
-            "comments": "#908080"
+            "comments": "#91848480"
         }
     },
 }

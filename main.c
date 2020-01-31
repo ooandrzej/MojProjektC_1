@@ -7,13 +7,12 @@ int main()
 
 {
 	system("chcp 65001");
-	int tex1, tex2;
-	tex1 = 1;
-	tex2 = 2;
+	char tex1[10] = "ZM1";
+	char tex2[10] = "ZM2";
 
 	puts("***********************");
-	printf("zmienne %s , %il\n, tex1, tex1");
-	printf("\nGCC_VERSION = %d.%d.%d \n", __GNUC__, __GNUC_MINOR__, __GNUC_PATCHLEVEL__);
+	printf("zmienne: %s , %s", tex1, tex1);
+	printf("\nWerja GCC: %d.%d.%d \n", __GNUC__, __GNUC_MINOR__, __GNUC_PATCHLEVEL__);
 	puts("***********************");
 
 	return 0;
