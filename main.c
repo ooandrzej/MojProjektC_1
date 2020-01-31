@@ -8,7 +8,7 @@ int main()
 {
 	system("chcp 65001");
 	char tex1[10] = "ZM1";
-	char tex2[10] = "ZM2";
+	char tex2[6] = "ZM2";
 
 	puts("***********************");
 	printf("zmienne: %s , %s", tex1, tex1);
