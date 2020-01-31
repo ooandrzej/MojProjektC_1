@@ -3,7 +3,7 @@
         {
             "name": "Win32",
             "browse": {
-                "patch": [
+                "path": [
                     "${workspaceFolder}",
                     "C:\\MinGW\\bin\\**",
                     "C:\\MinGW\\include\\",
@@ -12,9 +12,9 @@
             },
             "includePath": [
                 "${workspaceFolder}",
-                "C:\\MinGW\\bin\\**",
+                "C:\\MinGW\\bin\\",
                 "C:\\MinGW\\include\\",
-                "C:\\MinGW\\lib\\gcc\\mingw32\\8.2.0\\include\\c++\tr1\\**"
+                "C:\\MinGW\\lib\\gcc\\mingw32\\8.2.0\\include\\c++\tr1\\"
             ],
             "defines": [
                 "_DEBUG",
