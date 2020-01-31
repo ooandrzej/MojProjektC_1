@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "*.ino": "cpp",
+        "stdlib.h": "c",
+    },
+    "editor.tokenColorCustomizations": {
+        "[Default Dark+]": {
+            "comments": "#908080"
+        }
+    },
+}

@@ -1,0 +1,21 @@
+// Moja lekcja programowania
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+
+{
+	system("chcp 65001");
+
+	int tex1, tex2;
+	tex1 = "Wpisałeś T";
+	tex2 = "Wpisałeś N";
+
+	printf("*******************");
+	printf("wpisz literę: T lyb N");
+
+	printf("\b\n\n.........%s %s.........\n\n", tex1, tex2);
+
+	return 0;
+}
