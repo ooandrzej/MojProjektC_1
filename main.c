@@ -6,14 +6,15 @@
 int main()
 
 {
-	//system("chcp 65001");
+	system("chcp 65001");
 	int tex1, tex2;
 	tex1 = 1;
 	tex2 = 2;
 
-	printf("\n***********************\n");
-	printf("zmienne %s i %.f\n, tex1, tex1");
-	printf("GCC_VERSION = %d.%d.%d \n", __GNUC__, __GNUC_MINOR__, __GNUC_PATCHLEVEL__);
+	puts("***********************");
+	printf("zmienne %s , %i\n, tex1, tex1");
+	printf("\nGCC_VERSION = %d.%d.%d \n", __GNUC__, __GNUC_MINOR__, __GNUC_PATCHLEVEL__);
+	puts("***********************");
 
 	return 0;
 }
