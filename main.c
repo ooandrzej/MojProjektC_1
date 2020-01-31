@@ -12,7 +12,7 @@ int main()
 	tex2 = 2;
 
 	puts("***********************");
-	printf("zmienne %s , %i\n, tex1, tex1");
+	printf("zmienne %s , %il\n, tex1, tex1");
 	printf("\nGCC_VERSION = %d.%d.%d \n", __GNUC__, __GNUC_MINOR__, __GNUC_PATCHLEVEL__);
 	puts("***********************");
 
