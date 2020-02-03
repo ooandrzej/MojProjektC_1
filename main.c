@@ -1,26 +1,25 @@
-// Moja lekcja programowania
+/* Moja lekcja programowania*/
 
 #include <stdio.h>
 #include <stdlib.h>
 
-int zmiennaA, zmiennaB;
+int zmienna1, zmienna2, zmienna3;
+zmienna3 = 100;
 
 int main()
 
 {
-	zmiennaA = 11;
-	zmiennaB = 22;
+	zmienna1 = 3;
+	zmienna2 = 7;
 
-	printf("\nzmienna A = %i, zmienna B = %i\n", zmiennaA, zmiennaB);
-
-	mojaFunkcja();
+	zmienna1 == 3 ? puts("zmienna nr1 dokladnie = 3") : puts("zmienna nie równa ię 3");
+	printf("-suma tych zmiennych wynoi: %i", zmienna1 + zmienna2);
+	printf("\n-mojaFuunkcja zwraca wartość: %i", myFuunc());
+	
 	return 0;
 }
 
-int mojaFunkcja()
+int myFuunc()
 {
-	zmiennaA = 11;
-	zmiennaB = 22;
-	printf("wynik działania mojej funkcji: mojaFunkcja");
-	printf("\nzmienna A = %i, zmienna B = %i\n", zmiennaA, zmiennaB);
+	return zmienna3;
 }
