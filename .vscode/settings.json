@@ -3,11 +3,6 @@
         "*.ino": "cpp",
         "stdlib.h": "c",
     },
-    "editor.tokenColorCustomizations": {
-        "[Default Dark+]": {
-            "comments": "#91848480"
-        }
-    },
     "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\6\\pwsh.exe",
     "editor.formatOnPaste": true,
 }
