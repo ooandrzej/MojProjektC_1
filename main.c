@@ -5,16 +5,35 @@
 
 int main()
 {
-	double a, b, wynik;
+	double a, b;
+	char dzialanie;
 
-	printf("\npierwzy bok trojkata: ");
+	printf("\n\n\n\n\n\n\n*********************\nKALKULATOR\n*********************\n\n\n");
+	printf("pierwsza liczba:.. ");
 	scanf("%lf", &a);
-	printf("drugi bok: ");
+	printf("DZIALĄNIE: ******     + dodawanie,  - odejmowanie,  * mnozenie,  / aby podzielic     ******\n");
+	scanf("%lc", dzialanie);
+	printf("druga liczba:.. ");
 	scanf("%lf", &b);
+	printf("***********************************");
 
-	wynik = sqrt(((pow(a, 2)) + (pow(b, 2))));
+	switch (dzialanie)
+	{
+	case '+':
+		printf("%f + %f = %f", a, b, a + b);
+		break;
+	case '-':
+		printf("%f + %f = %f", a, b, a - b);
+		break;
+	case '*':
+		printf("%f + %f = %f", a, b, a * b);
+		break;
+	case '/':
+		printf("%f + %f = %f", a, b, a / b);
+		break;
+	};
 
-	printf("najdluzy bok tego trojkata ma dlugoc: %f\n\n", wynik);
+	printf("\nKONIEC\n");
 
 	return 0;
 }
