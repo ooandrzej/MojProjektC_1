@@ -1,4 +1,3 @@
-//obzar tetowy
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -6,34 +5,38 @@
 int main()
 {
 	double a, b;
-	char dzialanie;
+	char c;
 
-	printf("\n\n\n\n\n\n\n*********************\nKALKULATOR\n*********************\n\n\n");
-	printf("pierwsza liczba:.. ");
+	printf("\n\n\n******************** KALKULATOR *********************\n\npierwsza liczba..: ");
+
 	scanf("%lf", &a);
-	printf("DZIALĄNIE: ******     + dodawanie,  - odejmowanie,  * mnozenie,  / aby podzielic     ******\n");
-	scanf("%lc", dzialanie);
-	printf("druga liczba:.. ");
-	scanf("%lf", &b);
-	printf("***********************************");
 
-	switch (dzialanie)
+	printf("druga liczba..:    ");
+
+	scanf("%lf", &b);
+
+	printf("Wpisz dzialanie [+] [-] [*] [/] ");
+
+	scanf("%s", &c);
+	printf("\n");
+
+	switch (c)
 	{
 	case '+':
-		printf("%f + %f = %f", a, b, a + b);
+		printf("Dodawanie: %.2f + %.2f = %f", a, b, a + b);
 		break;
 	case '-':
-		printf("%f + %f = %f", a, b, a - b);
+		printf("Odejmowanie: %.2f - %.2f = %f", a, b, a - b);
 		break;
 	case '*':
-		printf("%f + %f = %f", a, b, a * b);
+		printf("Mnozenie: %.2f * %.2f = %f", a, b, a * b);
 		break;
 	case '/':
-		printf("%f + %f = %f", a, b, a / b);
+		b = '0' ? printf(" nie mozna dzielic przez %d", b) : printf("Dzielenie: %.2f : %.2f = %f", a, b, a / b);
 		break;
 	};
 
-	printf("\nKONIEC\n");
+	printf("\n\n********************** KONIEC ***********************\n");
 
 	return 0;
 }
