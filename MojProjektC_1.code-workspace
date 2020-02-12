@@ -8,7 +8,7 @@
 		"editor.formatOnPaste": true,
 		"editor.tokenColorCustomizations": {
 			"[Default Dark+]": {
-				"comments": "#91848480"
+				"comments": "#777676"
 			}
 		},
 	}

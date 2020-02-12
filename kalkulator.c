@@ -9,11 +9,11 @@ int main()
 
 	printf("\n\n\n******************** KALKULATOR *********************\n\npierwsza liczba..: ");
 
-	scanf("%lf", &a);
+	scanf("%d", &a);
 
 	printf("druga liczba..:    ");
 
-	scanf("%lf", &b);
+	scanf("%d", &b);
 
 	printf("Wpisz dzialanie [+] [-] [*] [/] ");
 
@@ -32,7 +32,14 @@ int main()
 		printf("Mnozenie: %.2f * %.2f = %f", a, b, a * b);
 		break;
 	case '/':
-		b = '0' ? printf(" nie mozna dzielic przez %d", b) : printf("Dzielenie: %.2f : %.2f = %f", a, b, a / b);
+		if (b = 0);
+		{
+			printf(" nie mozna dzielic przez %d", b);
+		}
+		{
+			printf("Dzielenie: %.2f : %.2f = %f", a, b, a / b);
+		}
+		 
 		break;
 	};
 

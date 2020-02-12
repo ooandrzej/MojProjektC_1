@@ -1,3 +1,5 @@
+// program that show number of char in ASCI array
+
 #include <stdio.h>
 
 int main()
