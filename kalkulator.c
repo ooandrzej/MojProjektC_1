@@ -14,32 +14,26 @@ int main()
 	printf("druga liczba..:    ");
 
 	scanf("%d", &b);
-
 	printf("Wpisz dzialanie [+] [-] [*] [/] ");
 
-	scanf("%s", &c);
+	scanf("%s", c);
+	printf("%d %d, \n", a, b);
 	printf("\n");
+	
 
 	switch (c)
 	{
 	case '+':
-		printf("Dodawanie: %.2f + %.2f = %f", a, b, a + b);
+		printf("Dodawanie: %d + %d = %f", a, b, a + b);
 		break;
 	case '-':
-		printf("Odejmowanie: %.2f - %.2f = %f", a, b, a - b);
+		printf("Odejmowanie: %d - %d = %f", a, b, a - b);
 		break;
 	case '*':
-		printf("Mnozenie: %.2f * %.2f = %f", a, b, a * b);
+		printf("Mnozenie: %d * %d = %f", a, b, a * b);
 		break;
 	case '/':
-		if (b = 0);
-		{
-			printf(" nie mozna dzielic przez %d", b);
-		}
-		{
-			printf("Dzielenie: %.2f : %.2f = %f", a, b, a / b);
-		}
-		 
+		b = 0 ? printf(" nie mozna dzielic przez %d", b): printf("Dzielenie: %d : %d = %f", a, b, a / b);
 		break;
 	};
 
