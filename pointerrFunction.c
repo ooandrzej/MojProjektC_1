@@ -1,6 +1,5 @@
 //program that presents run function by pointer
 #include <stdio.h>
-
 void suma(int a, int b);
 
 int main()
@@ -10,8 +9,8 @@ int main()
     printf("\nwprowadz 2 liczby\n: ");
     scanf("%d%d", &a, &b);
 
-    void (*pointer)(int, int);
-    pointer = suma;
+    int (*pointer)(int, int);
+    pointer = *suma;
 
     pointer(a, b);
     return 0;
