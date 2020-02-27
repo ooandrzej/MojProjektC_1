@@ -52,7 +52,7 @@ int main()
 			}
 			if (ocena[p][o] < 1)
 				break;
-			mid[p] += ocena[p][o];
+			mid[p] = (mid[p] + ocena[p][o])/(o+1);
 			printf(" mid%d = %.2f\n", p, mid[p]);
 		}
 	}
