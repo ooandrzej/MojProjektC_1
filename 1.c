@@ -3,7 +3,8 @@
 
 int main()
 {
-    char a[10];
+    char all[100];
+    char a[20], b[20], c[20], d[20], e[20];
     int i, j;
 
     puts("podaj napis");
