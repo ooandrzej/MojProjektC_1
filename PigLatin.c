@@ -1,24 +1,38 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 
 int main()
 {
+	char pig[100];
 	int i, j;
-	char napi[1][29];
-	char PigLatin[1][29];
+	i = j = 0;
 
-	scanf("%s", &napi);
-	j = strlen(napi);
-	printf("\n%s : %d\n", napi, j);
+	system("cls");
+	fgets(pig, 100, stdin);
 
-
-	for (i = 1; i < j; i++)
+	for (i = 1; i < strlen(pig) + 1; i++)
 	{
-		printf("test %s: \n", napi[1][i]);
+
+		if ((int)pig[i] == 32)
+		{
+			printf("%c%s", pig[j], "ay");
+			j = i + 1;
+		}
+
+		if ((int)pig[i] == 10)
+		{
+			printf("%c%s", pig[j], "ay");
+		}
+
+		else
+		{
+			printf("%c", pig[i]);
+			if ((int)pig[i] == 32)
+			{
+				i++;
+			}
+		}
 	}
 
 	return 0;
 }
-
-// -ay

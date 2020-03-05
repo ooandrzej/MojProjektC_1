@@ -4,5 +4,5 @@
         "stdlib.h": "c",
     },
     "editor.formatOnPaste": true,
-    "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\6\\pwsh.exe",
+   "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\6\\pwsh.exe",
 }

@@ -8,62 +8,47 @@ int main()
 {
     char all[400];
     char nju[20][20];
-    char tmp[20];
-    int al, w, z, i, len;
-    al = w = z = i = len = 0;
-    
-    for (; i<20; i++)                                          // write to all tables free end character to proppery activate table
-    {
-       nju[i][0] = '\0';
-    }
+    char tmp[1];
+    int al, w, z, i, j, len;
+    al = w = z = i = j = len = 0;
 
-    printf("wpisz tekst: \n");                                    // we gets a text from the user
+    printf("wpisz tekst: "); // we gets a text from the user
     fgets(all, 200, stdin);
-    
-    for (; al < strlen(all); al++)                                // we puts a separate words to the table
+
+    for (; al < strlen(all); al++) // we puts a separate words to the table
     {
         nju[w][z] = all[al];
-        z++;    
-                
-        if ((int)all[al] == 32)
+        z++;
+
+        if ((int)all[al] < 65 && (int)all[al] > 122)
         {
             nju[w][z] = '\0';
             w++;
-            z=0;
+            z = 0;
         }
     }
 
-
-
-    for (i = 0; i < w+1; i++)                                    // check new separate words in table
+    for (i = 0; i < w + 1; i++)
     {
-       printf("%s", (nju[i]));
+        len = strlen(nju[i]);
+        tmp[0] = nju[i][0];
+        for (j = 1; j < len; j++)
+        {
+             if ((int)nju[i][j] < 65 && (int)nju[i][j] > 122)
+            // printf("%c", nju[i][j]);
+            {
+                break;
+            }
+        
+            else
+        
+            {
+                nju[i][j - 1] = nju[i][j];
+                nju[i][j] = tmp[0];
+            }
+        }
+        // printf("%c", tmp[0]);
+        printf("%say", nju[i]);
     }
-
-
-// This will find the length of your string with the help of strlen() function of string.h header file
-    len = strlen(nju[0]);
-
-// iterate through each and every character of the string for printing it backwards or reverse direction
-    for(i = len - 1; i >= 0; i--) 
-    {
-        printf("%c", nju[0][i]);
-    }
-
-
-
-
     return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
