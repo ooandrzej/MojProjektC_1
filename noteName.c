@@ -1,17 +1,22 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-char noteName[5][5];
-int i;
-
-void main()
+int main()
 {
-	for (i = 0; i < 5; i++)
+	system("chcp 65001");
+	system("cls");
+
+	typedef strukt
 	{
-		printf("%d imie: ", i + 1);
-		scanf("%s", noteName[i]);
-	}
-	for (i = 0; i < 5; i++)
-	{	puts("");
-		printf(": ", noteName[i]);
-	}
+		int nr;
+		float rednia;
+		char przedmiot[12];
+	}	midle;
+
+	midle osoba1 = {12, 12.12, "Pawel"};
+
+	printf("%ld %.2lf %s", osoba1.nr, osoba1.param, osoba1.imie);
+
+	return 0;
 }

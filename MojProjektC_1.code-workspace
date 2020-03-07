@@ -4,12 +4,5 @@
 			"path": "."
 		}
 	],
-	"settings": {
-		"editor.formatOnPaste": true,
-		"editor.tokenColorCustomizations": {
-			"[Default Dark+]": {
-				"comments": "#777676"
-			}
-		},
-	}
+	
 }

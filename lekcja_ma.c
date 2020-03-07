@@ -1,15 +1,13 @@
 #include <stdio.h>
 
-void main()
+int main()
 {
-char [];
-int siz;
-scanf("%s", char);
+	char znak[100];
+	int siz;
+	scanf("%s", &znak);
 
-siz = sizeof(char);
-printf("%d = ", siz);
+	siz = sizeof(znak);
+	printf("wielkosc = %d", siz);
 
-	
-	
-	
-	}
+	return 0;
+}

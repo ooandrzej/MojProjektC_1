@@ -1,54 +1,50 @@
-#include <stdio.h>
-#include <stdlib.h>
+/*#include <stdio.h>
 #include <string.h>
 
-// char transPig(char WordTo[]);
+typedef struct
+{
+    int id;
+    char title[40];
+    float hours;
+} course;
+
+void update_course(course *clasa);
+void display_course(course clasa);
 
 int main()
 {
-    char all[400];
-    char nju[20][20];
-    char tmp[1];
-    int al, w, z, i, j, len;
-    al = w = z = i = j = len = 0;
+    course cs2;
+    update_course(&cs2);
+    display_course(cs2);
+    return 0;
+}
 
-    printf("wpisz tekst: "); // we gets a text from the user
-    fgets(all, 200, stdin);
+void update_course(course *clasa)
+{
+    strcpy(clasa->title, "C++ Fundamentals");
+    clasa->id = 111;
+    clasa->hours = 12.30;
+}
 
-    for (; al < strlen(all); al++) // we puts a separate words to the table
-    {
-        nju[w][z] = all[al];
-        z++;
+void display_course(course clasa)
+{
+    printf("%d\t%s\t%3.2f\n", clasa.id, clasa.title, clasa.hours);
+}
+*/
+/* system example : DIR */
+#include <stdio.h>  /* printf */
+#include <stdlib.h> /* system, NULL, EXIT_FAILURE */
 
-        if ((int)all[al] < 65 && (int)all[al] > 122)
-        {
-            nju[w][z] = '\0';
-            w++;
-            z = 0;
-        }
-    }
-
-    for (i = 0; i < w + 1; i++)
-    {
-        len = strlen(nju[i]);
-        tmp[0] = nju[i][0];
-        for (j = 1; j < len; j++)
-        {
-             if ((int)nju[i][j] < 65 && (int)nju[i][j] > 122)
-            // printf("%c", nju[i][j]);
-            {
-                break;
-            }
-        
-            else
-        
-            {
-                nju[i][j - 1] = nju[i][j];
-                nju[i][j] = tmp[0];
-            }
-        }
-        // printf("%c", tmp[0]);
-        printf("%say", nju[i]);
-    }
+int main()
+{
+    int i;
+    printf("Checking if processor is available...");
+    if (system(NULL))
+        puts("Ok");
+    else
+        exit(EXIT_FAILURE);
+    printf("Executing command DIR...\n");
+    i = system("dir");
+    printf("The value returned was: %d.\n", i);
     return 0;
 }

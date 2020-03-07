@@ -1,6 +1,6 @@
 // this program shows number ASCI of char and CHAR of number of asci.
 #include <stdio.h>
-#include <string.h>
+#include <stdlib.h>
 
 int main()
 {
@@ -8,17 +8,15 @@ int main()
 	int a;
 	system("cls");
 
-	printf("-------------\nznak: ");
+	printf("\nznak: ");
 	c[1] = getchar();
-	printf("%c == %i", c[1], c[1]);
+	printf("      %i\n", c[1]);
 
-	printf("\nnr ASCI: ");
+	printf("\nASCI: ");
 	scanf("%d", &a);
-	printf("%d == %c", a, (char)a);
+	printf("      '%c'", (char)a);
 
-	printf(" \n-------------\n");
-
-
+	printf(" \n\n");
 
 	return 0;
 }
