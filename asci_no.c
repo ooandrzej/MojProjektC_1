@@ -21,8 +21,9 @@ int main()
 	printf("      '%c'", (char)a);
 
 	printf(" \n\n");
-	printf("Program się zamknie za 5 sek...\n");
+	printf("... program się zamknie za 5 sek\n");
 	delay(5000);
+	system("cls");
 
 	return 0;
 }
