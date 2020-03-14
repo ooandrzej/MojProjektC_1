@@ -3,10 +3,8 @@
 
 int main()
 {
-    char all[400];
-    char nju[20][20];
-    int i, j, k;
-    i = j = k = 0;
+    char all[400] = {'\0'}, nju[20][20] = {{'\0'}, {'\0'}};
+    int i = 0, j = 0, k = 0;
 
     printf("wpisz tekst: "); //we gets a text from the user
     gets(all);
