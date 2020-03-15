@@ -35,7 +35,7 @@ int main()
 
 	for (i = 0; i < 5; i++)
 	{
-		((int)(strcmp(it[i], ite))) ? printf("%c", '') : printf("\n%d", ((i + 1) * 5));
+		((int)(strcmp(it[i], ite))) ? printf("") : printf("\n%d", ((i + 1) * 5));
 	}
 
 	return 0;
