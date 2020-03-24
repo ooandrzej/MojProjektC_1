@@ -1,32 +1,22 @@
 #include <stdio.h>
 #include <string.h>
 
-typedef struct
-{
-    int id;
-    char title[40];
-    double hours;
-} course;
-
-void update_course(course *clasa);
-void display_course(course *clasa);
-
 int main()
 {
-    course cs2;
-    update_course(&cs2);
-    display_course(&cs2);
+    char old[200], new[200];
+    int i, j = 0;
+
+    fgets(old, 200, stdin);
+
+    for (i = 0; i < strlen(old); i++)
+    {
+        if ((old[i] != 32) && (old[i] != 10))
+        {
+            new[j] = old[i];
+            j++;
+        }
+    }
+    printf("\n%s", new);
+
     return 0;
-}
-
-void update_course(course *clasa)
-{
-    strcpy(clasa->title, "C++ Fundamentals");
-    clasa->id = 111;
-    clasa->hours = 12.30;
-}
-
-void display_course(course *clasa)
-{
-    printf("%d\t%s\t%3.2f\n", clasa->id, clasa->title, clasa->hours);
 }
